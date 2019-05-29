@@ -22,7 +22,7 @@ apt install g++-arm-linux-gnueabihf
 
 5.download this examples
 and copy the neon_cartoon_effect to ComputeLibrary/build/examples
-cp neon_cartoon_effect ComputeLibrary/build/examples/ 
+cp neon_cartoon_effect ComputeLibrary/examples/ 
 
 6.run the examples
-arm-linux-gnueabihf-g++ examples/neon_cartoon_effect.cpp test_helpers/Utils.cpp -I. -Iinclude -std=c++11 -mfpu=neon -L. -larm_compute -o build/neon_cartoon_effect
+arm-linux-gnueabihf-g++ examples/neon_cartoon_effect.cpp utils/Utils.cpp -I. -Iinclude -std=c++11 -mfpu=neon -L. -larm_compute -o build/neon_cartoon_effect
